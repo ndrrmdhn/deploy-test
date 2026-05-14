@@ -1,0 +1,50 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\RentalController;
+use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\ProfileController;
+
+// Frontend Routes
+Route::get('/', [HomeController::class, 'landing'])->name('landing');
+Route::get('/produk', [HomeController::class, 'products'])->name('products.index');
+Route::get('/produk/{product}', [HomeController::class, 'show'])->name('products.show');
+Route::get('/kontrakan', [HomeController::class, 'rentals'])->name('rentals.index');
+Route::get('/kontrakan/{rental}', [HomeController::class, 'showRental'])->name('rentals.show');
+
+// Auth Routes
+Auth::routes();
+
+// Admin Routes (Protected)
+Route::middleware(['auth', 'role:super_admin,admin_toko,admin_kontrakan,kasir'])->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    // Super Admin & Admin Toko Only
+    Route::middleware('role:super_admin,admin_toko')->group(function () {
+        Route::resource('categories', CategoryController::class)->except(['show']);
+        Route::resource('products', ProductController::class)->except(['show']);
+        Route::resource('rentals', RentalController::class)->except(['show']);
+        Route::resource('banners', BannerController::class);
+        Route::resource('services', ServiceController::class);
+    });
+
+    // Super Admin Only
+    Route::middleware('role:super_admin')->group(function () {
+        Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
+        Route::post('/settings', [SettingController::class, 'update'])->name('settings.update');
+    });
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::put('/profile/password', [ProfileController::class, 'updatePassword'])->name('profile.password.update');
+});
+
+Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
