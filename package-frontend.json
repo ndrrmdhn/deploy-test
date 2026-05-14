@@ -1,0 +1,32 @@
+{
+  "name": "techstore-frontend",
+  "version": "1.0.0",
+  "description": "Pure static HTML/JS/CSS e-commerce frontend - Vercel ready",
+  "main": "frontend/index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "dev:bun": "bun run --bun serve frontend",
+    "serve": "npx http-server frontend -p 8000 -g",
+    "vercel-build": "echo 'No build needed - static site'",
+    "test": "echo 'Open browser and test manually - see DEPLOYMENT_GUIDE.md'"
+  },
+  "keywords": [
+    "ecommerce",
+    "static",
+    "vercel",
+    "html",
+    "javascript",
+    "tailwindcss",
+    "spa"
+  ],
+  "author": "Copilot",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndrrmdhn/deploy-test.git"
+  }
+}
