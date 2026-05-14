@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechStore - Toko Elektronik Online Terpercaya">
+  <meta name="keywords" content="elektronik, smartphone, laptop, gadget">
+  <title>TechStore - Toko Elektronik Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-gray-50" onload="PageHandlers.updateAuthMenu(); PageHandlers.updateCartBadge();">
+  <div id="app"></div>
+
+  <!-- Core Scripts -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/modules.js"></script>
+  <script src="/assets/js/app.js"></script>
+
+  <script>
+    // Initialize app on page load
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Load initial data
+      AuthModule.initUsersFromJSON();
+      CheckoutModule.initOrdersFromJSON();
+      await ProductModule.init();
+      
+      // Start router
+      Router.init();
+    });
+  </script>
+</body>
+</html>
