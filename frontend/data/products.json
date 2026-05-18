@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro Max",
+    "price": 15999000,
+    "image": "https://images.unsplash.com/photo-1592286927505-1def25115558?w=500&h=500&fit=crop",
+    "category": "smartphone",
+    "stock": 25,
+    "description": "Flagship smartphone dengan prosesor A17 Pro dan kamera 48MP",
+    "specs": ["256GB Storage", "12GB RAM", "6.7-inch Display", "5G"]
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "price": 14999000,
+    "image": "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&h=500&fit=crop",
+    "category": "smartphone",
+    "stock": 30,
+    "description": "Smartphone flagship dengan kamera 200MP dan desain premium",
+    "specs": ["512GB Storage", "12GB RAM", "6.8-inch Display", "5G"]
+  },
+  {
+    "id": 3,
+    "name": "MacBook Pro M3 Max",
+    "price": 28999000,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&h=500&fit=crop",
+    "category": "laptop",
+    "stock": 15,
+    "description": "Laptop profesional dengan chip M3 Max dan layar Liquid Retina",
+    "specs": ["1TB SSD", "24GB Unified Memory", "16-inch Display", "Up to 19 Hours Battery"]
+  },
+  {
+    "id": 4,
+    "name": "iPad Pro 12.9 M2",
+    "price": 12999000,
+    "image": "https://images.unsplash.com/photo-1561154464-82253bb900d3?w=500&h=500&fit=crop",
+    "category": "tablet",
+    "stock": 20,
+    "description": "Tablet premium dengan layar OLED dan Apple Pencil support",
+    "specs": ["512GB Storage", "8GB RAM", "12.9-inch OLED", "USB-C"]
+  },
+  {
+    "id": 5,
+    "name": "Sony WH-1000XM5 Headphones",
+    "price": 3999000,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    "category": "audio",
+    "stock": 50,
+    "description": "Headphone nirkabel premium dengan noise cancellation terbaik",
+    "specs": ["ANC Teknologi", "40 Jam Battery", "Bluetooth 5.3", "Foldable Design"]
+  },
+  {
+    "id": 6,
+    "name": "Apple Watch Series 9",
+    "price": 4999000,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop",
+    "category": "smartwatch",
+    "stock": 40,
+    "description": "Smartwatch dengan health monitoring dan AI features",
+    "specs": ["Retina Display", "Fitness Tracking", "ECG Monitor", "Water Resistant"]
+  },
+  {
+    "id": 7,
+    "name": "GoPro Hero 12 Black",
+    "price": 5999000,
+    "image": "https://images.unsplash.com/photo-1609034227505-5876f6aa4e90?w=500&h=500&fit=crop",
+    "category": "camera",
+    "stock": 18,
+    "description": "Action camera 4K dengan stabilisasi gimbal built-in",
+    "specs": ["5.3K Video", "27MP Photo", "HyperSmooth 6.0", "CloudSync"]
+  },
+  {
+    "id": 8,
+    "name": "Samsung 55-inch QLED TV",
+    "price": 8999000,
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&h=500&fit=crop",
+    "category": "tv",
+    "stock": 12,
+    "description": "Smart TV QLED dengan quantum dot technology dan AI upscaling",
+    "specs": ["4K Resolution", "120Hz Refresh", "Quantum Processor", "Smart Hub"]
+  },
+  {
+    "id": 9,
+    "name": "Dell XPS 15 Laptop",
+    "price": 18999000,
+    "image": "https://images.unsplash.com/photo-1588872657840-790ff3ec4ef0?w=500&h=500&fit=crop",
+    "category": "laptop",
+    "stock": 10,
+    "description": "Laptop developer dengan RTX 4060 dan layar InfinityEdge",
+    "specs": ["RTX 4060", "16GB RAM", "512GB SSD", "15.6-inch OLED"]
+  },
+  {
+    "id": 10,
+    "name": "Fujifilm X-T5 Camera",
+    "price": 17999000,
+    "image": "https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=500&h=500&fit=crop",
+    "category": "camera",
+    "stock": 8,
+    "description": "Mirrorless camera dengan 40MP sensor dan X-Trans color filter",
+    "specs": ["40MP Sensor", "6.2K Video", "Film Simulations", "Weather Sealed"]
+  },
+  {
+    "id": 11,
+    "name": "Anker PowerBank 25000mAh",
+    "price": 899000,
+    "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&h=500&fit=crop",
+    "category": "accessories",
+    "stock": 100,
+    "description": "Power bank kapasitas besar dengan fast charging 65W",
+    "specs": ["25000mAh Capacity", "65W Output", "USB-C", "LED Display"]
+  },
+  {
+    "id": 12,
+    "name": "Google Pixel 8 Pro",
+    "price": 11999000,
+    "image": "https://images.unsplash.com/photo-1598286384339-0c1bceb7c0a9?w=500&h=500&fit=crop",
+    "category": "smartphone",
+    "stock": 22,
+    "description": "Smartphone dengan AI features dan computational photography terdepan",
+    "specs": ["256GB Storage", "12GB RAM", "6.7-inch Display", "Magic Eraser"]
+  }
+]
